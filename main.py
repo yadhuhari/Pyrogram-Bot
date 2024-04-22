@@ -14,7 +14,7 @@ HKZ = Client(
 
 @HKZ.on_message(filters.command("start"))
 async def start_cmd(client, message):
-    await message.reply(photo=random.choice(PICS), caption="Hello Sir")
+    await message.reply_photo(random.choice(PICS), caption="Hello Sir")
 
 print("Bot is running 🏃")
 
