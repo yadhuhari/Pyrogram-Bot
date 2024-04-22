@@ -1,6 +1,7 @@
 from pyrogram import Client, filters
 import random
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.types import CallbackQuery
 
 
 PICS = [
