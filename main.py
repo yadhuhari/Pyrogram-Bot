@@ -14,7 +14,11 @@ HKZ = Client(
 
 @HKZ.on_message(filters.command("start"))
 async def start_cmd(client, message):
-    await message.reply_photo(random.choice(PICS), caption="Hello Sir")
+    await message.reply_photo(random.choice(PICS), caption=f"""Hᴇʟʟᴏ {m.from_user.mention} 👋,
+
+I'ᴍ Sᴄʀᴇᴇɴsʜᴏᴛ Gᴇɴᴇʀᴀᴛᴏʀ Bᴏᴛ. I ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ sᴄʀᴇᴇɴsʜᴏᴛs ʏᴏᴜʀ ᴠɪᴅᴇᴏ ғɪʟᴇs. Fᴏʀ ᴍᴏʀᴇ ᴅᴇᴛᴀɪʟs ᴄʜᴇᴄᴋ ʜᴇʟᴘ
+
+Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ: [ʜᴋᴢ ᴛɢ 🇮🇳](t.me/HKZTG)""")
 
 print("Bot is running 🏃")
 
