@@ -1,4 +1,9 @@
 from pyrogram import Client, filters
+import random
+
+PICS = [
+ "https://telegra.ph/file/28f4c97f0d1248873d4bd.jpg"
+]
 
 HKZ = Client(
     name="PyrogramBot",
@@ -9,7 +14,7 @@ HKZ = Client(
 
 @HKZ.on_message(filters.command("start"))
 async def start_cmd(client, message):
-    await message.reply_text("Hello Sir")
+    await message.reply(photo=random.choice(PICS), caption="Hello Sir")
 
 print("Bot is running 🏃")
 
