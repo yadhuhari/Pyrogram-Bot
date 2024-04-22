@@ -34,6 +34,25 @@ I'ᴍ Sᴄʀᴇᴇɴsʜᴏᴛ Gᴇɴᴇʀᴀᴛᴏʀ Bᴏᴛ. I ᴄᴀɴ ᴘʀ�
 
 Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ: [ʜᴋᴢ ᴛɢ 🇮🇳](t.me/HKZTG)""", reply_markup=InlineKeyboardMarkup(START_BUTTOMS))
 
+@HKZ.on_callback_query(
+    filters.create(lambda _, __, query: query.data.startswith("home"))
+)
+async def home_cb(c, m):
+    await m.answer()
+    await start(c, m, True)
+
+
+@HKZ.on_callback_query(
+    filters.create(lambda _, __, query: query.data.startswith("close"))
+)
+async def close_cb(c, m):
+    try:
+        await m.message.delete()
+        await m.message.reply_to_message.delete()
+    except:
+        pass
+
+
 print("Bot is running 🏃")
 
 HKZ.run()
