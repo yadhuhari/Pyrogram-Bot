@@ -8,18 +8,6 @@ PICS = [
  "https://telegra.ph/file/28f4c97f0d1248873d4bd.jpg"
 ]
 
-START_BUTTONS = [[
-  InlineKeyboardButton("Dᴇᴠᴇʟᴏᴘᴇʀ 👨‍💻", url=f"https://t.me/MR_HKZ_TG"),
-  InlineKeyboardButton("Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ 🔰", url="https://telegram.dog/HKZTG")
-  ],[
-  InlineKeyboardButton("Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 😎", url="https://github.com/Ns-AnoNymouS/animated-lamp")
-  ],[
-  InlineKeyboardButton("Hᴇʟᴘ 🛠", callback_data="help"),
-  InlineKeyboardButton("Sᴇᴛᴛɪɴɢs ⚙", callback_data="set+settings")
-  ],[
-  InlineKeyboardButton("Cʟᴏsᴇ 📛", callback_data="close")
-  ]] 
-
 HKZ = Client(
     name="PyrogramBot",
     api_id="23050566",
@@ -36,7 +24,18 @@ async def start_cmd(client, message):
 I'ᴍ Sᴄʀᴇᴇɴsʜᴏᴛ Gᴇɴᴇʀᴀᴛᴏʀ Bᴏᴛ. I ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ sᴄʀᴇᴇɴsʜᴏᴛs ʏᴏᴜʀ ᴠɪᴅᴇᴏ ғɪʟᴇs. Fᴏʀ ᴍᴏʀᴇ ᴅᴇᴛᴀɪʟs ᴄʜᴇᴄᴋ ʜᴇʟᴘ
 
 Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ: [ʜᴋᴢ ᴛɢ 🇮🇳](t.me/HKZTG)""", 
-        reply_markup=InlineKeyboardMarkup(START_BUTTONS)
+        reply_markup=InlineKeyboardMarkup( [[
+            InlineKeyboardButton("Dᴇᴠᴇʟᴏᴘᴇʀ 👨‍💻", url=f"https://t.me/MR_HKZ_TG"),
+            InlineKeyboardButton("Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ 🔰", url="https://telegram.dog/HKZTG")
+            ],[
+            InlineKeyboardButton("Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 😎", url="https://github.com/Ns-AnoNymouS/animated-lamp")
+            ],[
+            InlineKeyboardButton("Hᴇʟᴘ 🛠", callback_data="help"),
+            InlineKeyboardButton("Sᴇᴛᴛɪɴɢs ⚙", callback_data="set+settings")
+            ],[
+            InlineKeyboardButton("Cʟᴏsᴇ 📛", callback_data="close")
+            ]] 
+            )
     )
 
 @HKZ.on_callback_query(
