@@ -1,20 +1,22 @@
 from pyrogram import Client, filters
 import random
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
 
 PICS = [
  "https://telegra.ph/file/28f4c97f0d1248873d4bd.jpg"
 ]
 
 START_BUTTONS = [[
-        InlineKeyboardButton("My Father 🧔", url=f"https://t.me/{username}"),
-        InlineKeyboardButton("Updates Channel 🔰", url="https://telegram.dog/NsBotsOfficial")
+        InlineKeyboardButton("Dᴇᴠᴇʟᴏᴘᴇʀ 👨‍💻", url=f"https://t.me/MR_HKZ_TG"),
+        InlineKeyboardButton("Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ 🔰", url="https://telegram.dog/HKZTG")
         ],[
-        InlineKeyboardButton("Source code 😎", url="https://github.com/Ns-AnoNymouS/animated-lamp")
+        InlineKeyboardButton("Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 😎", url="https://github.com/Ns-AnoNymouS/animated-lamp")
         ],[
-        InlineKeyboardButton("Help ⁉️", callback_data="help"),
-        InlineKeyboardButton("Settings ⚙", callback_data="set+settings")
+        InlineKeyboardButton("Hᴇʟᴘ 🛠", callback_data="help"),
+        InlineKeyboardButton("Sᴇᴛᴛɪɴɢs ⚙", callback_data="set+settings")
         ],[
-        InlineKeyboardButton("Close 📛", callback_data="close")
+        InlineKeyboardButton("Cʟᴏsᴇ 📛", callback_data="close")
     ]] 
 
 HKZ = Client(
