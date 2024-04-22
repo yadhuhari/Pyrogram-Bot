@@ -5,6 +5,18 @@ PICS = [
  "https://telegra.ph/file/28f4c97f0d1248873d4bd.jpg"
 ]
 
+START_BUTTONS = [[
+        InlineKeyboardButton("My Father 🧔", url=f"https://t.me/{username}"),
+        InlineKeyboardButton("Updates Channel 🔰", url="https://telegram.dog/NsBotsOfficial")
+        ],[
+        InlineKeyboardButton("Source code 😎", url="https://github.com/Ns-AnoNymouS/animated-lamp")
+        ],[
+        InlineKeyboardButton("Help ⁉️", callback_data="help"),
+        InlineKeyboardButton("Settings ⚙", callback_data="set+settings")
+        ],[
+        InlineKeyboardButton("Close 📛", callback_data="close")
+    ]] 
+
 HKZ = Client(
     name="PyrogramBot",
     api_id="23050566",
@@ -18,7 +30,7 @@ async def start_cmd(client, message):
 
 I'ᴍ Sᴄʀᴇᴇɴsʜᴏᴛ Gᴇɴᴇʀᴀᴛᴏʀ Bᴏᴛ. I ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ sᴄʀᴇᴇɴsʜᴏᴛs ʏᴏᴜʀ ᴠɪᴅᴇᴏ ғɪʟᴇs. Fᴏʀ ᴍᴏʀᴇ ᴅᴇᴛᴀɪʟs ᴄʜᴇᴄᴋ ʜᴇʟᴘ
 
-Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ: [ʜᴋᴢ ᴛɢ 🇮🇳](t.me/HKZTG)""")
+Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ: [ʜᴋᴢ ᴛɢ 🇮🇳](t.me/HKZTG)""", reply_markup=InlineKeyboardMarkup(START_BUTTOMS))
 
 print("Bot is running 🏃")
 
