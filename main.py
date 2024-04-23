@@ -112,9 +112,9 @@ Iғ ɪssᴜᴇs ᴘᴇʀsɪsᴛs ᴄᴏɴᴛᴀᴄᴛ ᴍʏ Dᴇᴠᴇʟᴏᴘ�
             InlineKeyboardButton("Sᴇᴛᴛɪɴɢs ⚙", callback_data="set+settings")
             ],[
             InlineKeyboardButton("Cʟᴏsᴇ 📛", callback_data="close")
-            ]] 
+            ]]
             )
-    
+    )
 
 
 @HKZ.on_callback_query(
