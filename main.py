@@ -59,7 +59,7 @@ Iғ ɪssᴜᴇs ᴘᴇʀsɪsᴛs ᴄᴏɴᴛᴀᴄᴛ ᴍʏ Dᴇᴠᴇʟᴏᴘ�
 async def help_cmd(client, message):
     await message.reply_photo(
         photo=random.choice(PICS), 
-        caption=f"""Hɪ {mention}. Wᴇʟᴄᴏᴍᴇ ᴛᴏ Sᴄʀᴇᴇɴsʜᴏᴛ Gᴇɴᴇʀᴀᴛᴏʀ Bᴏᴛ. Yᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ sᴄʀᴇᴇɴsʜᴏᴛs. 
+        caption=f"""Hɪ {message.from_user.mention}. Wᴇʟᴄᴏᴍᴇ ᴛᴏ Sᴄʀᴇᴇɴsʜᴏᴛ Gᴇɴᴇʀᴀᴛᴏʀ Bᴏᴛ. Yᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ sᴄʀᴇᴇɴsʜᴏᴛs. 
 
 👉 I sᴜᴘᴘᴏʀᴛ ᴀɴʏ ᴋɪɴᴅ ᴏғ ᴛᴇʟᴇɢʀᴀᴍ ᴠɪᴅᴇᴏ ғɪʟᴇ (sᴛʀᴇᴀᴍɪɴɢ ᴠɪᴅᴇᴏ ᴏʀ ᴅᴏᴄᴜᴍᴇɴᴛ ᴠɪᴅᴇᴏ ғɪʟᴇs) ᴘʀᴏᴠɪᴅᴇᴅ ɪᴛ ʜᴀs ᴘʀᴏᴘᴇʀ ᴍɪᴍᴇ-ᴛʏᴘᴇ ᴀɴᴅ ɪs ɴᴏᴛ ᴄᴏʀʀᴜᴘᴛᴇᴅ.
 👉 I ᴀʟsᴏ sᴜᴘᴘᴏʀᴛ Sᴛʀᴇᴀᴍɪɴɢ URLs. Tʜᴇ URL sʜᴏᴜʟᴅ ʙᴇ ᴀ sᴛʀᴇᴀᴍɪɴɢ URL, ɴᴏɴ IP sᴘᴇᴄɪғɪᴄ, ᴀɴᴅ sʜᴏᴜʟᴅ ʀᴇᴛᴜʀɴ ᴘʀᴏᴘᴇʀ ʀᴇsᴘᴏɴsᴇ ᴄᴏᴅᴇs.
@@ -91,7 +91,7 @@ async def help_cb(c, m):
     await message.answer()
     await message.message.edit(
         photo=random.choice(PICS), 
-        caption=f"""Hɪ {mention}. Wᴇʟᴄᴏᴍᴇ ᴛᴏ Sᴄʀᴇᴇɴsʜᴏᴛ Gᴇɴᴇʀᴀᴛᴏʀ Bᴏᴛ. Yᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ sᴄʀᴇᴇɴsʜᴏᴛs. 
+        caption=f"""Hɪ {message.from_user.mention}. Wᴇʟᴄᴏᴍᴇ ᴛᴏ Sᴄʀᴇᴇɴsʜᴏᴛ Gᴇɴᴇʀᴀᴛᴏʀ Bᴏᴛ. Yᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ sᴄʀᴇᴇɴsʜᴏᴛs. 
 
 👉 I sᴜᴘᴘᴏʀᴛ ᴀɴʏ ᴋɪɴᴅ ᴏғ ᴛᴇʟᴇɢʀᴀᴍ ᴠɪᴅᴇᴏ ғɪʟᴇ (sᴛʀᴇᴀᴍɪɴɢ ᴠɪᴅᴇᴏ ᴏʀ ᴅᴏᴄᴜᴍᴇɴᴛ ᴠɪᴅᴇᴏ ғɪʟᴇs) ᴘʀᴏᴠɪᴅᴇᴅ ɪᴛ ʜᴀs ᴘʀᴏᴘᴇʀ ᴍɪᴍᴇ-ᴛʏᴘᴇ ᴀɴᴅ ɪs ɴᴏᴛ ᴄᴏʀʀᴜᴘᴛᴇᴅ.
 👉 I ᴀʟsᴏ sᴜᴘᴘᴏʀᴛ Sᴛʀᴇᴀᴍɪɴɢ URLs. Tʜᴇ URL sʜᴏᴜʟᴅ ʙᴇ ᴀ sᴛʀᴇᴀᴍɪɴɢ URL, ɴᴏɴ IP sᴘᴇᴄɪғɪᴄ, ᴀɴᴅ sʜᴏᴜʟᴅ ʀᴇᴛᴜʀɴ ᴘʀᴏᴘᴇʀ ʀᴇsᴘᴏɴsᴇ ᴄᴏᴅᴇs.
